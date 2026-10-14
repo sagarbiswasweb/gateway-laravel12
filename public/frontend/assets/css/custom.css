@@ -1,0 +1,1029 @@
+.header-custom{
+    z-index: 10000 !important;
+}
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:#E5203E;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 4px;
+    width: 30px;
+    height: 35px;
+    text-align: center;
+}
+.footer-nav-list li{
+    padding: 0px 3px !important;
+}
+.footer-nav-list li a{
+margin: 3px 0 !important;
+}
+/* .footer-nav-list li:hover {
+    background-color: #0e1e52 !important;
+} */
+
+.ptb-75{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.a, .btn-link{
+    color: #f25767 !important;
+}
+.dropdown-grid.width-half {
+    width: 380px !important;
+}
+
+.about-bg{
+   background-image: url('../img/inner-banner/about-us1.jpg');
+   background-position: center;
+   width: 100%;
+   height: auto;
+}
+.clients-bg{
+    background-image: url('../img/inner-banner/clients.jpg');
+    background-position: center;
+    width: 100%;
+    height: auto;
+ }
+ .contact-bg{
+    background-image: url('../img/inner-banner/contact-us.jpg');
+    background-position: center;
+    width: 100%;
+    height: auto;
+ }
+ .services-bg{
+    background-image: url('../img/inner-banner/services.jpg');
+    background-position: center;
+    width: 100%;
+    height: auto;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================== MY CUSTOM CSS ======================================= */
+
+
+/* Tab list container */
+.feature-tab-list-2 {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+/* Individual tab item */
+.nav-item-1 {
+    margin-top: 5px !important;
+    width: auto;
+}
+
+/* Tab links as cards */
+.feature-tab-list-2 .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-width: 180px;
+    line-height: 1.2;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Hover effect */
+.feature-tab-list-2 .nav-link:hover {
+    background-color: white;
+    border: 1px solid #f21130;
+    color: #333;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Active tab */
+.feature-tab-list-2 .nav-link.active {
+    background-color: #f21130 !important;
+    color: #fff !important;
+    border-color: #f21130 !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+    .feature-tab-list-2 .nav-link {
+        min-width: 140px;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+
+
+.hero-section .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section .swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-section .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.client-list li .single-integration img {
+    max-width: 150px;
+    max-height: 100px;
+}
+
+.caption {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    z-index: 1500;
+    width: 50%;
+}
+
+.caption h4 {
+    color: #fff;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+
+
+/* MOBILE HERO SECTION */
+@media (max-width: 576px) {
+
+    /* Make image fully visible, maintain aspect ratio */
+    .hero-section .swiper-slide img {
+        width: 100%;
+        height: auto;          /* do not crop */
+        object-fit: contain;   /* keep entire image visible */
+        max-height: 80vh;      /* optional limit for small screens */
+    }
+
+    /* Caption adjustments */
+    .caption {
+        padding-top: 100px;
+        position: absolute;
+        bottom: 10%;           /* move caption near bottom */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;            /* almost full width */
+        text-align: center;    /* center text */
+        top: auto;             /* remove top position */
+        z-index: 1500;
+    }
+
+    /* Caption heading font size */
+    .caption h4 {
+        font-size: 18px;       /* fixed for mobile */
+        line-height: 1.2;      /* nice spacing for 2 lines */
+        text-transform: uppercase;
+        margin-top: 0;
+    }
+
+    /* Adjust buttons under caption */
+    .caption .action-btns {
+        margin-top: 0.25rem !important;
+        display: flex;
+        justify-content: center; /* center buttons */
+        gap: 0.2rem;             /* spacing between buttons */
+        flex-wrap: wrap;          /* wrap buttons if needed */
+    }
+
+}
+/* Mobile & small devices */
+@media (max-width: 768px) {
+    .caption h4 {
+        font-size: 17px !important;  /* force 18px for all small screens */
+        line-height: 1;
+        text-transform: uppercase;
+        margin-top: 0;
+    }
+
+    /* Adjust caption position for smaller screens */
+    .caption {
+        padding-top: 50px;           /* space from top */
+        width: 90%;
+        left: 50%;
+        bottom: 10%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .hero-section .swiper-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        max-height: 80vh;
+    }
+
+    .caption .action-btns {
+        margin-top: 0.25rem !important;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+/* Testimonial container */
+.testimonialSwiper {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+/* Card style */
+.testimonial-card {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Quote icons soft */
+.testimonial-card img.opacity-10 {
+    opacity: 0.08 !important;
+}
+
+/* Pagination */
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+    background: #f39c12;
+    opacity: 1;
+}
+
+/* Navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+.testimonial-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    max-height: 7.5em; /* line-height * number of lines */
+    line-height: 1.5em;
+    position: relative;
+}
+
+.testimonial-text.expanded {
+    -webkit-line-clamp: unset;
+    max-height: none;
+}
+.see-more {
+    display: inline-block;
+    margin-top: 8px;
+    color: #f39c12;
+    cursor: pointer;
+    font-weight: 500;
+}
+/* Read more / Read less link */
+.see-more {
+    display: inline-block;
+    margin-top: 6px;
+    color: #e63946 !important;   /* force red */
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.see-more:hover {
+    color: #ff4d6d !important;   /* slightly lighter red on hover */
+    border-bottom: 1px solid #ff4d6d;
+}
+
+
+
+
+
+
+/* tab pan design  */
+.feature-tab-info {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.feature-tab-info:hover {
+    transform: translateY(-5px);
+}
+
+.feature-tab-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f21130;
+}
+
+.feature-tab-info ul,
+.why-choose-content ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    gap: 12px 20px;
+}
+
+.feature-tab-info ul li,
+.why-choose-content ul li {
+    display: flex;
+    align-items: flex-start; /* keep icon at top if text wraps */
+    gap: 10px;               /* space between icon and text */
+    line-height: 1.4;
+    font-size: 16px;
+    color: #555;
+    word-break: break-word;  /* break long words if needed */
+}
+
+.feature-tab-info ul li i,
+.why-choose-content ul li i{
+    flex-shrink: 0;          /* icon does not shrink */
+    color: #f21130;
+    margin-top: 4px;         /* vertically align icon with first line */
+}
+.feature-tab-info ul li span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.read-more-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #f14a60;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more-link i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Top line - right → left */
+.read-more-link::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: 0;              /* start from right */
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.3s ease;
+}
+
+/* Bottom line - left → right */
+.read-more-link::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;               /* start from left */
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.3s ease;
+}
+
+/* Hover effects */
+.read-more-link:hover {
+    color: #f14a60;
+    transform: translateY(-2px);
+}
+
+.read-more-link:hover::before {
+    width: 100%;           /* top line expands right → left */
+}
+
+.read-more-link:hover::after {
+    width: 100%;           /* bottom line expands left → right */
+}
+
+.read-more-link:hover i {
+    transform: translateX(4px);
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .feature-tab-info ul {
+        grid-template-columns: 1fr; /* single column on tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .feature-tab-info {
+        padding: 15px;
+    }
+
+    .feature-tab-info h3 {
+        font-size: 20px;
+    }
+
+    .feature-tab-info ul li {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Clients Section ===== */
+.integration-section {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+/* Section heading */
+.section-heading h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.section-heading p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Client wrapper */
+.client-wrapper {
+    margin-top: 20px;
+}
+
+/* Make Bootstrap columns flex so cards stretch */
+.client-wrapper > div {
+    display: flex;
+}
+
+/* Single client card */
+.single-client {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #eee;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    min-height: 150px;
+}
+
+/* Client image */
+.single-client img {
+    max-height: 70px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.single-client:hover img {
+    transform: scale(1.1);
+}
+
+.single-client:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-color: #ddd;
+}
+
+/* Client name */
+.client-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    word-break: break-word;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .single-client {
+        min-height: 140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .single-client {
+        min-height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .single-client img {
+        max-height: 60px;
+    }
+    .client-name {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .single-client {
+        padding: 0.8rem;
+        min-height: auto;
+    }
+}
+
+
+/* for header menu  */
+
+.nav .nav-link:hover{
+    color: #f14a60 !important;
+}
+
+/* Default state: blue */
+.dropdown-grid-item .drop-title {
+    color: rgb(58, 61, 66);
+    transition: color 0.3s;
+}
+
+/* Hover state: red */
+.dropdown-grid-item a:hover .drop-title {
+    color: #f14a60 !important;
+}
+
+/* Optional: number badge color */
+/* Default state with transition */
+.dropdown-link .demo-list {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+    transition: background-color 0.3s, color 0.3s; /* <- transition here */
+}
+
+/* Hover state */
+.dropdown-link:hover .demo-list {
+    background-color: #f14a60 !important;
+    color: #fff;
+}
+
+.z--1 {
+    z-index: 1; /* or 0 if you want it behind some content but visible */
+}
+
+.single-client {
+    position: relative; /* add this */
+    z-index: 10;        /* higher than shapes */
+}
+
+
+
+
+
+
+
+
+
+/* Gallery card uniform size */
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 200px; /* uniform height, adjust as needed */
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%; /* fill the card */
+    object-fit: cover; /* maintain aspect ratio and crop if needed */
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(34,34,34,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .overlay {
+    opacity: 1;
+}
+
+.gallery-card .overlay i {
+    color: #fff;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-card:hover .overlay i {
+    transform: scale(1.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery-card {
+        border-radius: 8px;
+        height: 150px; /* smaller height for mobile */
+    }
+
+    .gallery-section .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .gallery-section .section-heading p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    #lightboxModal {
+        margin-top: 0 !important;
+    }
+}
+
+
+
+
+
+
+/* contact page  */
+
+/* Contact cards hover effect */
+.hover-card {
+    transition: all 0.35s ease;
+    border: 1px solid #f1f1f1;
+    border-radius: 1rem;
+    background: #fff;
+}
+.hover-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* Form fields */
+.form-control {
+    border: 1px solid #e5e5e5;
+    padding: 0.9rem 1.1rem;   /* more spacious */
+    font-size: 16px;
+    border-radius: 0.6rem;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+.form-control:focus {
+    border-color: #5780f2 !important;   /* force red border */
+    outline: none;                      /* remove default blue outline */
+    background-color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(87, 116, 242, 0.25); /* soft red glow */
+}
+
+/* Labels */
+.form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Button */
+.contact-submit-btn {
+    background: linear-gradient(135deg, #f25767, #e94e5e);
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.85rem 1.5rem;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
+}
+.contact-submit-btn:hover {
+    background: linear-gradient(135deg, #d94555, #c63e4c);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(242, 87, 103, 0.35);
+}
+.contact-submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(242, 87, 103, 0.25);
+}
+
+/* Bigger textarea */
+#message {
+    min-height: 180px;
+    resize: vertical;
+}
+
+
+
+
+.bg-light {
+  position: relative; /* ensure child absolute elements stay inside */
+}
+
+.bg-light img {
+  position: relative;
+  z-index: 1; /* bring image above the dot-mask */
+}
+
+.bg-light .dot-mask {
+  z-index: 0; /* keep dot-mask behind image */
+}
+
+
+
+
+/* mobile view te nav tab center a anar jonno  */
+/* Center nav tabs on screens smaller than 768px (Bootstrap sm) */
+@media (max-width: 767.98px) {
+    .feature-tab-list-2 {
+        justify-content: center !important; /* center tabs */
+        flex-wrap: wrap; /* allow wrapping if too wide */
+    }
+    .feature-tab-list-2 .nav-item-1 {
+        text-align: center;
+        margin-bottom: 10px; /* optional spacing between rows */
+    }
+}
+
+
+
+
+/* for dropdown menu  */
+/* Scrollable dropdown for large lists */
+.dropdown-grid {
+    max-height: 90vh; /* Adjust height as needed */
+    overflow-y: auto;
+}
+
+/* Optional: nice scrollbar for modern browsers */
+.dropdown-grid::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dropdown-grid::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+
+
+
+/* Make numbered circles uniform */
+.dropdown-link .demo-list {
+    display: inline-flex;          /* Flex for centering */
+    justify-content: center;
+    align-items: center;
+    width: 30px;                   /* Fixed width */
+    height: 30px;                  /* Fixed height */
+    font-size: 14px;               /* Font size */
+    line-height: 1;                /* Prevent extra spacing */
+    text-align: center;
+    border-radius: 50%;            /* Make it circular */
+    flex-shrink: 0;                /* Prevent shrinking for larger numbers */
+}
+
+
+
+
+.footer-section {
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f25767;
+}
+
+.footer-link {
+    color: #cbd5e0;
+    display: block;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+/* 
+.footer-link:hover {
+    color: #8ecf14 !important;
+    text-decoration: none;
+} */
+
+.footer-nav-list li a {
+    color: #cbd5e0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Hover: reddish text border/glow */
+.footer-nav-list li a:hover {
+    color: #fafafa !important;
+    text-shadow:
+        0 0 2px #000000a6,
+        0 0 4px #000000a6,
+        0 0 6px #000000a6;
+}
+
+
+.footer-social-list li a {
+    color: #e0cfcb;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.footer-social-list li a:hover {
+    color: #f25767;
+    transform: scale(1.2);
+    background-color: rgba(0, 0, 0, 0) !important ;
+}
+
+/* Radial highlight for footer */
+.footer-top::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at center, rgba(255,75,75,0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Contact Address styling */
+.contact-address {
+    white-space: normal;   /* allow wrapping */
+    line-height: 1.4;      /* nice spacing */
+}
+
+@media (max-width: 767px) {
+    .contact-address {
+        white-space: normal; /* allow wrapping on mobile */
+    }
+}
+
+
+.custom-tab {
+        border: 1px solid #dee2e6;
+        border-radius: 30px;
+        padding: 8px 16px;
+        background: white;
+        color: #333;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    .custom-tab:hover {
+        background: #ff4d4d;
+        color: #fff !important;
+        border-color: #ff4d4d;
+        box-shadow: 0 4px 10px rgba(255, 77, 77, 0.4);
+    }
+    .custom-tab.active {
+        background: #ff4d4d;
+        color: #fff !important;
+        border-color: #ff4d4d;
+        box-shadow: 0 4px 10px rgba(255, 77, 77, 0.6);
+    }
+
+    .custom-tab {
+        border: 1px solid #dee2e6;
+        border-radius: 30px;
+        padding: 12px 18px;
+        background: white;
+        color: #333;
+        font-weight: 500;
+        height: 100%; 
+        text-align: center;
+        transition: all 0.3s ease;
+        white-space: nowrap; /* prevent breaking inside */
+    }
+    .custom-tab:hover {
+        background: #ff4d4d;
+        color: #fff !important;
+        border-color: #ff4d4d;
+        box-shadow: 0 4px 10px rgba(255, 77, 77, 0.4);
+    }
+    .custom-tab.active {
+        background: #ff4d4d;
+        color: #fff !important;
+        border-color: #ff4d4d;
+        box-shadow: 0 4px 10px rgba(255, 77, 77, 0.6);
+    }
+    /* Make all buttons same size in grid */
+    .nav-item-1 {
+        flex: 1 1 20%; /* adjust 20% = 5 per row */
+        min-width: 250px;
+    }
+    
+
+/* swiper pagination disable in mobie and tab  */
+@media (max-width: 1024px) {
+  .swiper-pagination {
+    display: none !important;
+  }
+}
+
+
+
+/* active page header service dropdown link colore  */
+.dropdown-grid .dropdown-grid-item .active .demo-list{
+    background-color: #ee2943 !important;
+}
+
+.dropdown-grid-item .active .drop-title {
+    color: #f14a60 !important;
+}
+
+
+.nav .active{
+    color: #f14a60 !important;
+}
